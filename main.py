@@ -1,4 +1,4 @@
-import time, os, random, pandas
+import time, os, pandas
 
 def clear():
   os.system('cls' if os.name == 'nt' else 'clear')
@@ -58,7 +58,7 @@ def register_student():
     major = input('Enter major: ').title()
     while not major: major = input('Major is required!\nEnter major: ').title()
 
-    # Getting GPA...
+      # Getting GPA...
     while True:
         try:
             GPA = float(input(f'What is {name} GPA? '))
@@ -221,4 +221,3 @@ Enter your choice from 1-6: ''')
   elif entered == '6':
     break
   clear()
-  
